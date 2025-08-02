@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- from here menu bar row code begins -->
+    <nav class="navbar">
+        <!-- link for the site logo -->
+        <a href="#" class="logo"><img src="img/logo.png" alt="site_logo"></a>
+        <!-- links for the search bar in the menu -->
+        <div class="search">
+            <input class="basic-slide" id="name" type="text" placeholder="Search" />
+            <img id="glass" src="img/glass.png" alt="searchbar">
+        </div>
+        <!-- main listed menu links and names -->
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links"><b><u>Home</u></b></a>
+            </li>
+            <li>
+                <a href="printers.html" class="nav-links"><b>Printers</b></a>
+            </li>
+            <li>
+                <a href="blog.html" class="nav-links"><b>Blog</b></a>
+            </li>
+            <li>
+                <a href="research.html" class="nav-links"><b>Research</b></a>
+            </li>
+            <li>
+                <a href="aboutus.html" class="nav-links"><b>About Us</b></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cart.png" alt="cart" style="width: 1.5rem; margin-left: 1rem;">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- menu bar codes ends here -->
+    <!-- Here is the code for webpage introduction, where blog page is linked  -->
+    <div class="content-wrapper" style="background-color: #e0b9a7;">
+        <div class="content-container">
+            <div class="left-content">
+                <h1>The Digital Revolution: Printers Changing Everyday Life</h1>
+                <p>See how technology is transforming our daily lives and how printers are essential for
+                    efficiency and connectivity. Our cutting-edge printers seamlessly print documents and
+                    capture priceless moments, integrating convenience and innovation into your daily routine.
+                </p>
+                <a href="blog.html" class="custom-button"><b>Read More</b></a>
+            </div>
+            <div class="banner">
+                <div class="banner_dot_slide">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
+                </div>
+                <div class="banner_img">
+                    <img src="img/all.JPG" class="slide">
+                    <img src="img/all2.webp" class="slide">
+                    <img src="img/inkjet.png" class="slide">
+                    <img src="img/thermal.webp" class="slide">
+                    <img src="img/Laser.jpg" class="slide">
+
+                </div>
+            </div>
+            <script>
+                //here is the JavaScript code of manual image dot-slider.
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("slide");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--here is the code to  show some highlighted products and linking printers page -->
+    <div class="printer-products" style="background-color: #00539C;">
+        <h2 style="text-align: center; color: white; font-size: 1.5em;"><a link href="Printers.html" class="button1">
+                Recommended Printers </a></h2>
+        <div class="printer-row">
+            <!-- here is printers images and discounted prices -->
+            <div class="printer-item" style="background-color: #e0b9a7;">
+                <img src="img/dot matrix.jpg">
+                <h4 style="padding-top: 100; padding-left: 50; ">DOT MATRRIX 200N</b><br><strike>Rs.
+                        37,500</strike><br>Rs. 29,999</h4>
+            </div>
+
+            <div class="printer-item" style="background-color:#e0b9a7;">
+                <img src="img/HP Laser.jpg">
+                <h4 style="padding-left: 80; padding-top: 60;">HP Laser 133N<br><strike>Rs. 60,000</strike><br>Rs.
+                    55,500</h4>
+            </div>
+
+            <div class="printer-item" style="background-color:#e0b9a7;">
+                <img src="img/Jetpro.jpg">
+                <h4 style="padding-left: 50; padding-top: 70">OfficeJet Pro 21X<br><strike>Rs. 48,900</strike><br>Rs.
+                    45,900</h4>
+            </div>
+
+            <div class="printer-item" style="background-color:#e0b9a7;">
+                <img src="img/color.jpg">
+                <h4 style="padding-left: 100; padding-top: 30">ColorPrint Pro<br><strike>Rs. 29,999</strike><br>Rs.
+                    25,999</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- here is information Section about research and aboutus -->
+    <div class="information-section">
+        <!-- here is research information -->
+        <div class="research-content">
+            <div class="content-col">
+                <a href="research.html">
+                    <img src="img/res1.jpg" style="border-radius: 50px; width: 80%;"></a>
+            </div>
+            <div class="content-col">
+                <p><b>
+                        Our carefully designed webpages and chosen selection of printers, supported by research, is
+                        presented to satisfy
+                        the various requirements of both experts and hobbyists. We keep up with the newest
+                        developments in print technology and simple format of interaction with our website , so you can
+                        access everything from high-speed laser
+                        printers to sophisticated 3D printing solutions by simple click. You can rely on us to provide
+                        accuracy,
+                        dependability, and performance with each print as we're always investing in research to provide
+                        you the finest printing available.
+                    </b></p>
+                <a href="research.html" class="custom-button"><b>Research</b></a>
+            </div>
+        </div>
+        <!-- here is team's information -->
+        <div class="about-content">
+            <div class="content-col">
+                <a href="aboutus.html">
+                    <img src="img/aboutus.jpeg" style="border-radius: 50px; width: 80%;"></a>
+            </div>
+            <div class="content-col">
+                <p><b>Welcome to "Printer Store", where creativity and skill collide and passion and innovation meet.
+                        Our shared objective when embarking on this journey was to redefine printing industry and
+                        significantly improve the daily works of our clients and customers. We at "Printer Store"
+                        believe that creativity, dedication, and cooperation are powerful qualities to serve you the
+                        best.</b></p>
+                <a href="aboutus.html" class="custom-button"><b>Meet Our Team</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- from here Footer code begins-->
+    <footer class="printer-footer">
+        <div class="footer-container">
+            <div class="social-media-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/_anthus?igsh=M251bzQwdWI0aWZy" target="_blank">
+                    <img src="img/instra.png" alt="Instagram">
+                </a>
+                <a href="https://pininterest.com" target="_blank">
+                    <img src="img/ping.png" alt="Pinterest">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="img/twiter.png" alt="Twitter">
+                </a>
+            </div>
+            <!--other info about Printer Store -->
+            <div class="footer-info">
+                <p><strong>Printer Store</strong></p>
+                <p>Address: Kathmandu, Nepal</p>
+                <p>Contact Us: printerstore@gmail.com</p>
+                <p>&copy; 2024 Printer Store . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

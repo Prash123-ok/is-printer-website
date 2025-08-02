@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer</title>
+
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- from here menu bar row code begins -->
+    <nav class="navbar">
+        <!-- js for the toggle button to change the printer store color -->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- link for the site logo -->
+        <a href="#" class="logo"><img src="img/logo.png" alt="site_logo"></a>
+        <!-- links for the search bar in the menu -->
+        <div class="search">
+            <input class="basic-slide" id="name" type="text" placeholder="Search" />
+            <img id="glass" src="img/glass.png" alt="searchbar">
+        </div>
+        <!-- main listed menu links and names -->
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links"><b>HOME</b></a>
+            </li>
+            <li>
+                <a href="printers.html" class="nav-links"><b><u>Printers</u></b></a>
+            </li>
+            <li>
+                <a href="blog.html" class="nav-links"><b>Blog</b></a>
+            </li>
+            <li>
+                <a href="research.html" class="nav-links"><b>Research</b></a>
+            </li>
+            <li>
+                <a href="aboutus.html" class="nav-links"><b>About Us</b></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/cart.png" alt="cart" style="width: 1.5rem; margin-left: 1rem;">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- menu bar codes ends here -->
+    <!-- main content parts code begins here -->
+    <section>
+        <div class="main-wrapper">
+            <div class="header">
+                <h1 class="name">Printer Store</h1>
+                <br>
+                <br>
+                <!-- button that changes printer Store text color -->
+                <button onclick="changeColor('blue')" class="blue">Blue</button>
+                <button onclick="changeColor('green')" class="green">Green</button>
+                <button onclick="changeColor('orangered')" class="orange">Orange</button>
+            </div>
+        </div>
+        <!-- printer description with image begins -->
+        <div class="printers-sec">
+            <!-- product 1 of the printer -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <!-- linking printer image -->
+                    <img src="img/p1.jpg" alt="product1 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">MG2570S</span>
+                    <h4>Canon MG2570S 3 in 1 Multi-Function Inkjet Printer</h4>
+                    <p>High-quality printing anf efficient performance for your professional needs.</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS10,000</small>RS8,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 2 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p2.jpg" alt="product2 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">P2500W</span>
+                    <h4>PANTUM P2500W Wireless Laser Printer for Office and Home Use</h4>
+                    <p>Compact and reliable, this printer is perfect for home offices and small business.</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS10,000</small>RS8,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product3 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p3.jpg" alt="product3 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">C1005N</span>
+                    <h4>Bluetooth Pocket Thermal Printer</a></h4>
+                    <p>Enjoy wireless convenience, portable sticker Printer compatible with iOS and Android</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS1,500</small>RS 1,200</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 4-->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p4.jpg" alt="product4 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">B1BX</span>
+                    <h4>BIQU B1 BX 3D Printer</h4>
+                    <p> Higly precise and versatile, seamlessly transforms digital designsinto tangible objects with
+                        speed and accuracy</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS100,000</small>RS88,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product5 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p5.jpg" alt="product5 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">T420W</span>
+                    <h4>Ink Tank Refill System Printer</h4>
+                    <p>Introducing Ink Refill Printer combining efficient copying and scanning capabilities for enhanced
+                        productivity</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS30,000</small>RS25,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 6-->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p6.jpg" alt="product6 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">TR150</span>
+                    <h4>Canon Pixma Wireless Portable Printer</h4>
+                    <p> Offering seamless mobile printing, high resolution outputs and convinient wireless connectivity.
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS59,999 </small>RS63,999</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product7 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p7.jpg" alt="product7 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">EC500W</span>
+                    <h4>Epson Eco Tank all in one</h4>
+                    <p>Cost-effective, eco-friendly, catridge free printing with high-capacity ink tanks, delivering
+                        sharp documents and vibrant photos </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS27,000</small>RS25,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 8-->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p8.jpg" alt="product8 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">JP222W</span>
+                    <h4>HP Laser Jet Pro</h4>
+                    <p>Excels in fast, professional-quality printing, featuring wireless connectivity, automatic
+                        double-sided printing </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS10,000</small>RS8,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 9 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p9.jpg" alt="product9 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">M7102DW</span>
+                    <h4>PANTUM M7102DW 3in1 Duplex Multi-function Printer | 3 In 1 Multifunction Laser Printer</h4>
+                    <p>combines printing, scanning, and copying capabilities with the added convenience of duplex
+                        printing,
+                        making it a comprehensive solution for various office tasks. </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS21,000</small>RS19,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product 10 -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-tumb">
+                    <img src="img/p10.jpg" alt="product10 img">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">MC300W</span>
+                    <h4>Thermal POS Receipt Printer</h4>
+                    <p>Compact design for space-saving, and compatibility with various point-of-sale systems,
+                        ensuring reliable and high-quality receipt printing for businesses. </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>RS18,000</small>RS15,000</div>
+                        <div class="product-links">
+
+                            <button class="button" role="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="contact-us">
+            <form class="cf">
+                <h1>Elegant Contact Form</h1>
+                <br>
+                <div class="half left cf">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+                    <input type="text" id="input-subject" placeholder="Subject">
+                </div>
+                <div class="half right cf">
+                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                </div>
+                <input class="button" type="submit" value="Submit" id="input-submit">
+            </form>
+
+            <div class="cont-text">
+                <form class="cf">
+                    <h1>Kamal Marg, Kathmandu</h1>
+                    <br>
+                    <p>Phone no: 9800000000</p>
+                    <br>
+                    <p>Email: printerstore@gmail.com</p>
+                    <br>
+                </form>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- from here Footer code begins-->
+    <footer class="printer-footer">
+        <div class="footer-container">
+            <div class="social-media-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/_anthus?igsh=M251bzQwdWI0aWZy" target="_blank">
+                    <img src="img/instra.png" alt="Instagram">
+                </a>
+                <a href="https://pininterest.com" target="_blank">
+                    <img src="img/ping.png" alt="Pinterest">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="img/twiter.png" alt="Twitter">
+                </a>
+            </div>
+            <!--other info about Printer Store -->
+            <div class="footer-info">
+                <p><strong>Printer Store</strong></p>
+                <p>Address: Kathmandu, Nepal</p>
+                <p>Contact Us: printerstore@gmail.com</p>
+                <p>&copy; 2024 Printer Store . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js">
+    </script>
+</body>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- from here menu bar row code begins -->
+  <nav class="navbar">
+    <!-- link for the site logo -->
+    <a href="#" class="logo"><img src="img/logo.png" alt="site_logo"></a>
+    <!-- links for the search bar in the menu -->
+    <div class="search">
+      <input class="basic-slide" id="name" type="text" placeholder="Search" />
+      <img id="glass" src="img/glass.png" alt="searchbar">
+    </div>
+    <!-- main listed menu links and names -->
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="index.html" class="nav-links"><b>HOME</b></a>
+      </li>
+      <li>
+        <a href="printers.html" class="nav-links"><b>Printers</b></a>
+      </li>
+      <li>
+        <a href="aboutus.html" class="nav-links"><b><u>About Us</u></b></a>
+      </li>
+      <li>
+        <a href="blog.html" class="nav-links"><b>Blog</b></a>
+      </li>
+      <li>
+        <a href="research.html" class="nav-links"><b>Research</b></a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/cart.png" alt="cart" style="width: 1.5rem; margin-left: 1rem;">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- menu bar codes ends here -->
+  <main style="background-color: beige;">
+    <div class="desc" style="text-align:center">
+      <h1 style="margin: 0px;">Printer store</h1>
+      <p style="margin: 0px; padding-top: 11px;"><b> You work, our team assist!!!</b></p>
+      <p style="margin: 0px; padding-top: 3px;"><b> Let's meet our team!!! </b></p>
+    </div>
+    <br><br>
+    <!-- portfolio of all the team members-->
+    <section class="cv">
+      <div class="cv__image">
+        <img src="img/Messika.jpg" alt="Meshika">
+      </div>
+      <div class="cv__content">
+        <h2 class="cv__title">Name:Meshika Gubhaju</h2>
+        <p class="cv__description">email: mesika3210@gmail.com</p>
+        <p class="cv__description">Education status: Bachelor(hons) Networking and IT Security</p>
+        <p class="cv__description">Skills:Communication and problem-solving skills</p>
+        <p class="cv__description">Volunteered: Stall marketing in college programme</p>
+        <p class="cv__description">Page designed: AboutUs</p>
+      </div>
+
+      <div class="cv__image">
+        <img src="img/prashika.JPG" alt="Prashika">
+      </div>
+      <div class="cv__content">
+        <h2 class="cv__title">Name: Prashika Sharma</h2>
+        <p class="cv__description">email: prashikasharma287@gmail.com</p>
+        <p class="cv__description">Education status: Bachelor(hons) Networking and IT Security</p>
+        <p class="cv__description">Skills: creative and web-designing</p>
+        <p class="cv__description">Volunteered: volunteered as IT Support unit in WSF programme</p>
+        <p class="cv__description">Page designed: Homepage, Researchpage</p>
+      </div>
+    </section>
+    <section class="cv">
+      <div class="cv__image">
+        <img src="img/Akshit.png" alt="Akshit">
+      </div>
+      <div class="cv__content">
+        <h2 class="cv__title">Name:Akshit Shah</h2>
+        <p class="cv__description">email: akshitshah290@gmail.com</p>
+        <p class="cv__description">Education status: Bachelor(hons) Networking and IT Security</p>
+        <p class="cv__description">Skills:Problem-solving skills</p>
+        <p class="cv__description">Voluntered: Trouble-shooting</p>
+        <p class="cv__description">Page designed: Printer Page</p>
+      </div>
+
+      <div class="cv__image">
+        <img src="img/aprisha.jpg" alt="Aprisha">
+      </div>
+      <div class="cv__content">
+        <h2 class="cv__title">Name:Aprisha Shakya</h2>
+        <p class="cv__description">email: shakyaaprisha@gmail.com</p>
+        <p class="cv__description">Education status: Bachelor(hons) Networking and IT Security</p>
+        <p class="cv__description">Skills: Marketing and social media handling</p>
+        <p class="cv__description">Voluntered: Socialmedia page handling </p>
+        <p class="cv__description">Page designed: Blog</p>
+      </div>
+    </section>
+  </main>
+  <!--contact form for the customer to fill-->
+  <div class="Contact" style=" background-color: rgb(195, 195, 231);">
+    <h2>Contact Form</h2>
+    <form name="Form" onsubmit="return validateForm()">
+      <label><b>*First Name:</b></label>
+      <input type="text" name="First Name"> <br><br>
+      <label><b>*Last Name:</b></label>
+      <input type="text" name="Last Name"><br><br>
+      <label><b>*Email:</b></label>
+      <input type="text" name="Email"><br><br>
+      <label><b>*Contact:</b></label>
+      <input type="text" name="Contact"> <br><br>
+      <label><b>Gender:</b></label>
+      <input type="radio" name="genderdetails" checked value="male">Male
+      <input type="radio" name="genderdetails" value="female">Female
+      <br><br>
+      <label><b>Are you an existing member?</b></label>
+      <input type="radio" name="member" checked value="Yes">Yes
+      <input type="radio" name="member" value="No">No
+      <br><br>
+      <label><b>Any message?</b></label>
+      <br>
+      <textarea name="Any message?" rows="10" cols="31" placeholder="Enter a message.."></textarea>
+
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <!-- using javascript to check and ensure each fields of the form is filled-->
+  <script>
+    function validateForm() {
+      var firstName = document.forms["Form"]["First Name"].value;
+      var lastName = document.forms["Form"]["Last Name"].value;
+      var email = document.forms["Form"]["Email"].value;
+      var contact = document.forms["Form"]["Contact"].value;
+
+      if (firstName === "" || lastName === "" || email === "" || contact === "") {
+        alert("Empty fields are found. Please fill all the fields...");
+        return false; // Prevent form submission
+      } else {
+        alert("Thank you for giving your time to fill up the form!!!");
+        return true; // Allow form submission
+      }
+    }
+  </script>
+  </div>
+
+  <!-- from here Footer code begins-->
+  <footer class="printer-footer">
+    <div class="footer-container">
+      <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/_anthus?igsh=M251bzQwdWI0aWZy" target="_blank">
+          <img src="img/instra.png" alt="Instagram">
+        </a>
+        <a href="https://pininterest.com" target="_blank">
+          <img src="img/ping.png" alt="Pinterest">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="img/twiter.png" alt="Twitter">
+        </a>
+      </div>
+      <!--other info about Printer Store -->
+      <div class="footer-info">
+        <p><strong>Printer Store</strong></p>
+        <p>Address: Kathmandu, Nepal</p>
+        <p>Contact Us: printerstore@gmail.com</p>
+        <p>&copy; 2024 Printer Store . All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
